@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Georgia', serif;
+    padding-top: 90px;
+}
+
+
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 550px;
+    margin-top: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #1271EE;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links .active {
+    color: #1271EE;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.nav-links a:hover {
+    color: #1271EE;
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #1292EE;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.icon-circle:hover {
+    background-color: #016ab5;
+    transform: scale(1.1);
+}
+
+.logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+}
+
+
+/* CONTACT */
+.contact-section {
+    padding: 80px 8%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.contact-title {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 40px;
+}
+
+.contact-title span {
+    color: red;
+}
+
+.contact-subtitle {
+    margin: 15px 0 30px;
+    color: #555;
+}
+
+/* INFO BOXES */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    background: #eee;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.info-box i {
+    margin-right: 8px;
+    color: #000000;
+}
+
+/* FORM BOX */
+.contact-box {
+    background: #eaeaea;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* FORM LAYOUT */
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+.contact-box textarea {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.contact-box button {
+    background: black;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-box button:hover {
+    background: #333;
+}

@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Georgia', serif;
+    padding-top: 150px;
+}
+
+
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 550px;
+    margin-top: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(52, 52, 52);
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #1271EE;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links .active {
+    color: #1271EE;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.nav-links a:hover {
+    color: #1271EE;
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #1292EE;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.icon-circle:hover {
+    background-color: #016ab5;
+    transform: scale(1.1);
+}
+
+.logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+}
+
+/* CART PAGE */
+
+.title-heading {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-family: Sue Ellen Francisco;
+}
+
+.title-heading span {
+    color: red;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+}
+
+/* LEFT SIDE */
+.food-section {
+    text-align: center;
+    position: relative;
+}
+
+.title {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.food-img {
+    width: 260px;
+    border-radius: 50%;
+}
+
+
+.qty-vertical {
+    position: absolute;
+    right: -60px;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.qty-vertical button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+}
+
+.qty-vertical span {
+    font-weight: bold;
+}
+
+/* TEXT */
+.ingredients {
+    color: gray;
+    font-size: 14px;
+}
+
+.price {
+    color: red;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.stars {
+    color: gold;
+    margin-top: 5px;
+}
+
+/* SOCIAL */
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: #555;
+}
+
+/* RIGHT SIDE */
+.order-box {
+    width: 320px;
+    height: 400px;
+    background: #dcdcdc;
+    padding: 25px;
+    border-radius: 4px;
+}
+
+.order-box h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.line {
+    border-bottom: 2px solid black;
+    margin: 15px 0;
+}
+
+
+.order-box p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.total {
+    font-weight: bold;
+}
+
+/* Terms */
+.terms {
+    display: block;
+    font-size: 15px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.item-price {
+    color: red;
+    font-weight: bold;
+}
+
+/* Button */
+.continue-btn {
+    width: 100%;
+    background: #555;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+}

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yum Yard</title>
+
+    <!-- External CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&family=Sue+Ellen+Francisco&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="/assets/css/home_page.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar-custom">
+            <div class="logo">
+                <img src="/assets/images/logo 2.png" alt="logo">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Food Menu</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+
+            </ul>
+
+            <div class="auth-links">
+                <!-- <a class="icon-circle" href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                </a> -->
+                <a href="login.html" class="logout-btn">Sign In</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+
+            <!-- LEFT IMAGE -->
+            <div class="hero-image">
+                <img src="/assets/images/menu-item-3.png" alt="Food">
+            </div>
+
+            <!-- RIGHT TEXT -->
+            <div class="hero-content">
+                <h1>Enjoy Your Healthy</h1>
+                <h2>Delicious Food</h2>
+                <p>
+                    Experience the perfect blend of taste and freshness at Yum Yard.
+
+                    Discover flavors that satisfy your cravings and keep you coming back for more.
+                </p>
+                <button class="hero-btn">Book a Table</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2 class="about-title">
+            Learn More <span>About Us</span>
+        </h2>
+        <a href="#">
+            <div class="about-wrapper">
+
+                <!-- LEFT SIDE -->
+                <div class="about-left">
+                    <img src="/assets/images/Aboout Us.jpg" class="about-img-top" alt="Restaurant">
+
+                    <p>
+                        At Yum Yard, we believe that great food brings people together.
+                        Our journey started with a simple passion - to serve delicious,
+                        high-quality meals made from the freshest ingredients. Every dish
+                        is prepared with care, combining traditional recipes with modern
+                        culinary creativity.
+
+                        We take pride in creating a warm and welcoming atmosphere where
+                        friends and families can enjoy memorable dining experiences.
+                        Whether you're here for a quick bite or a special occasion,
+                        Yum Yard is your perfect destination.
+                    </p>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="about-right">
+                    <p>
+                        Our team of skilled chefs is dedicated to delivering exceptional
+                        flavors in every dish. We focus on quality, hygiene, and customer
+                        satisfaction to ensure that every visit exceeds your expectations.
+
+                        At Yum Yard, we don’t just serve food - we create experiences.
+                        From our carefully curated menu to our friendly service, everything
+                        is designed to make you feel valued and satisfied.
+
+                        Come and enjoy a place where taste meets passion.
+                    </p>
+
+                    <img src="/assets/images/istockphoto-1829241109-612x612.jpg" class="about-img-bottom" alt="Food">
+                </div>
+
+            </div>
+        </a>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="menu">
+        <h2 class="menu-title">Check Our <span>Yummy Menu</span></h2>
+
+        <div class="menu-tabs">
+            <button onclick="filterMenu('all')" class="active">All</button>
+            <button onclick="filterMenu('lunch')">Lunch</button>
+            <button onclick="filterMenu('dinner')">Dinner</button>
+        </div>
+
+        <div class="menu-container">
+
+            <div class="menu-card lunch">
+                <a href="#" onclick="checkLogin(event)"> <img src="/assets/images/menu-item-1.png">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <span>Rs:2000.00</span>
+                </a>
+            </div>
+
+            <div class="menu-card dinner">
+                <a href="#" onclick="checkLogin(event)">
+                    <img src="/assets/images/menu-item-2.png">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <span>Rs:2000.00</span>
+                </a>
+            </div>
+
+            <div class="menu-card lunch">
+                <a href="#" onclick="checkLogin(event)"> <img src="/assets/images/menu-item-3.png">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <span>Rs:2000.00</span>
+                </a>
+            </div>
+
+            <div class="menu-card dinner">
+                <a href="#" onclick="checkLogin(event)">
+                    <img src="/assets/images/menu-item-2.png">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <span>Rs:2000.00</span>
+                </a>
+            </div>
+
+            <div class="menu-card lunch">
+                <a href="#" onclick="checkLogin(event)">
+                    <img src="/assets/images/menu-item-3.png">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <span>Rs:2000.00</span>
+                </a>
+            </div>
+
+            <div class="menu-card dinner">
+                <a href="#" onclick="checkLogin(event)">
+                    <img src="/assets/images/menu-item-2.png">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <span>Rs:2000.00</span>
+                </a>
+            </div>
+
+            <div class="menu-card lunch">
+                <a href="#" onclick="checkLogin(event)">
+                    <img src="/assets/images/menu-item-3.png">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <span>Rs:2000.00</span>
+                </a>
+            </div>
+
+            <div class="menu-card dinner">
+                <a href="#" onclick="checkLogin(event)">
+                    <img src="/assets/images/menu-item-2.png">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <span>Rs:2000.00</span>
+                </a>
+            </div>
+
+            <div class="menu-card lunch">
+                <a href="#" onclick="checkLogin(event)"> <img src="/assets/images/menu-item-3.png">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <span>Rs:2000.00</span>
+                </a>
+            </div>
+
+            <div class="menu-card dinner">
+                <a href="#" onclick="checkLogin(event)">
+                    <img src="/assets/images/menu-item-2.png">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <span>Rs:2000.00</span>
+                </a>
+            </div>
+
+            <div class="menu-card lunch">
+                <a href="#" onclick="checkLogin(event)"> <img src="/assets/images/menu-item-3.png">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <span>Rs:2000.00</span>
+                </a>
+            </div>
+
+            <div class="menu-card dinner">
+                <a href="#" onclick="checkLogin(event)">
+                    <img src="/assets/images/menu-item-2.png">
+                    <h3>Magnam Tiste</h3>
+                    <p>Lorem, deren, trataro, filede, nerada</p>
+                    <span>Rs:2000.00</span>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial">
+        <h2 class="testimonial-title">
+            What Are They <span>Saying About Us</span>
+        </h2>
+
+        <div class="testimonial-card">
+
+            <!-- LEFT IMAGE -->
+            <div class="testimonial-img">
+                <img src="/assets/images/testimonials-2.jpg" alt="user">
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="testimonial-content">
+                <p>
+                    “Proin iaculis purus consequat sem cure digni ssim donec porttitora
+                    entum suscipit rhoncus. Accusantium quam, ultricies eget id,
+                    aliquam eget nibh et. Maecen aliquam, risus at semper.”
+                </p>
+
+                <h4>Sara Wilsson</h4>
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- DOTS -->
+        <div class="testimonial-dots">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <!-- CHEFS -->
+    <section class="chefs">
+        <h2 class="chefs-title">Our <span>Professional Chefs</span></h2>
+
+        <a href="about_us.html">
+            <div class="chefs-container">
+
+                <!-- CHEF 1 -->
+                <div class="chef-card">
+                    <img src="/assets/images/famous-female-chefs.webp" alt="chef">
+                    <h3>Walter White</h3>
+                    <h5>Master Chef</h5>
+                    <p>
+                        Velit aut quia fugit et. Dolorum ea voluptate vel tempore
+                        tenetur ipsa quae aut.
+                    </p>
+
+                    <div class="chef-social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+
+                <!-- CHEF 2 -->
+                <div class="chef-card">
+                    <img src="/assets/images/pexels-photo-7205249.webp" alt="chef">
+                    <h3>Walter White</h3>
+                    <h5>Master Chef</h5>
+                    <p>
+                        Velit aut quia fugit et. Dolorum ea voluptate vel tempore
+                        tenetur ipsa quae aut.
+                    </p>
+
+                    <div class="chef-social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+
+                <!-- CHEF 3 -->
+                <div class="chef-card">
+                    <img src="/assets/images/Patissier.jpeg" alt="chef">
+                    <h3>Walter White</h3>
+                    <h5>Master Chef</h5>
+                    <p>
+                        Velit aut quia fugit et. Dolorum ea voluptate vel tempore
+                        tenetur ipsa quae aut.
+                    </p>
+
+                    <div class="chef-social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+
+            </div>
+        </a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+
+        <h2 class="contact-title">Need Help? <span>Contact Us</span></h2>
+
+        <p class="contact-subtitle">
+            We're here to help! Reach out to us with any questions or concerns.
+        </p>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+            <div class="info-box">
+                <i class="fa fa-phone"></i>
+                <span>Call Us</span> 076-4586236
+            </div>
+
+            <div class="info-box">
+                <i class="fa fa-map-marker-alt"></i>
+                <span>Address</span> 55/Colombo Road, Negombo.
+            </div>
+
+            <div class="info-box">
+                <i class="fa fa-envelope"></i>
+                <span>Email</span> yumyard@gmail.com
+            </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="contact-box">
+            <form id="contactForm">
+                <div class="form-row">
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+
+                <textarea id="message" placeholder="Enter your message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </section>
+
+
+    <!--Footer-->
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container">
+            <div class="row gy-3">
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <i class="bi bi-geo-alt icon"></i>
+                    <div class="address">
+                        <h4>Address</h4>
+                        <p> 55
+                            Colombo Road, Negombo.</p>
+                        <p></p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <i class="bi bi-telephone icon"></i>
+                    <div>
+                        <h4>Contact</h4>
+                        <p>
+                            <strong>Phone:</strong> <span>076-4586236</span><br>
+                            <strong>Email:</strong> <span>yumyard@gmail.com</span><br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex">
+                    <i class="bi bi-clock icon"></i>
+                    <div>
+                        <h4>Opening Hours</h4>
+                        <p>
+                            <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
+                            <strong>Sunday</strong>: <span>Closed</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4>Follow Us</h4>
+                    <div class="social-links d-flex">
+                        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/home_page.js"></script>
+
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(a => {
+                a.classList.remove("active");
+                if (a.getAttribute("href") === "#" + current) {
+                    a.classList.add("active");
+                }
+            });
+        });
+
+        function checkLogin(event) {
+            // prevent default link behavior
+            event.preventDefault();
+
+            // check login status (example using localStorage)
+            const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+            if (isLoggedIn === "true") {
+                // if logged in → go to menu item page
+                window.location.href = "menu_item.html";
+            } else {
+                // if NOT logged in → show message
+                alert("Please log into the system first to place an order!");
+
+                // optional: redirect to login page after alert
+                window.location.href = "login.html";
+            }
+        }</script>
+</body>
+
+</html>
